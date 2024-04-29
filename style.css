@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans",serif;
+}
+
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+body{
+    height: 100vh;
+    background-color: var(--Darkcyan);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Top-decaration{
+    position: fixed;
+    top: -85%;
+    left: -25%;
+}
+
+.Bottom-decaration{
+    position: fixed;
+    left: 45%;
+    top: 50%;
+}
+
+.wrapper {
+   max-width: 320px;
+   border-radius: 15px;
+   overflow: hidden;
+   z-index: 1;
+   background-color: hsl(0, 0%, 100%);
+}
+
+.ProfileContainer  {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.ProfileContainer .banner {
+    width: 100%;
+}
+
+.avatar {
+    border-radius: 50%;
+    position: absolute;
+    top: 72px;
+    left: 112px;
+    border: 5px solid white;
+}
+
+.avatarName {
+    text-align: center;
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.avatarName span {
+    color: var(--Darkgray);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.location {
+    font-weight: 500;
+    text-align: center;
+    font-size: .85rem;
+    color: var(--Darkgray);
+    margin-top: 10px;
+    padding-bottom: 25px;
+}
+
+.ProfileDetails {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.ProfileDetails div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProfileDetails div span {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+}
+
+.ProfileDetails div p {
+    font-size: .6rem;
+    letter-spacing: 2px;
+    color: var(--Darkgray);
+}
+
+@media screen and (max-width: 930px) {
+    
+    .Top-decaration {
+        top: -120%;
+        left: -70%;
+    }
+    .Bottom-decaration{
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .Top-decaration{
+        top: -100%;
+        left: -150%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Top-decaration {
+        left: -210%;
+        top: -120%;
+    }
+    .Bottom-decaration {
+        top:30%;
+        left: 40%
+    }
+}
