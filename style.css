@@ -28,12 +28,14 @@ body{
     position: fixed;
     top: -85%;
     left: -25%;
+    transition: all 0.3s ease-in-out;
 }
 
 .Bottom-decaration{
     position: fixed;
     left: 45%;
     top: 50%;
+    transition: all 0.3s ease-in-out;
 }
 
 .wrapper {
